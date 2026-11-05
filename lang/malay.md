@@ -74,6 +74,8 @@ Pembetulan dan terjemahan dialu-alukan. Baca [CONTRIBUTING.md](../CONTRIBUTING.m
 
 Kalau panduan ini membantu, ⭐ akan membantu orang lain jumpa.
 
+*Panduan tidak rasmi. Tiada kaitan dengan GitHub dan tidak disokong oleh GitHub.*
+
 ---
 
 Kali terakhir disemak: November 2026. GitHub tukar achievement tanpa beritahu. Kalau ada yang salah, [buka issue](../../../issues).

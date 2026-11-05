@@ -14,7 +14,7 @@ Screenshots of the PR or issue timeline help a lot.
 
 ## Fixing a guide
 
-The guides are in `docs/achievements/`. The website (`index.html` at the repo root) reads those same files, so you only need to edit them once.
+The guides are in `docs/achievements/`. The website reads those same files, so you only need to edit them once. To add a new badge page or change a page title, edit `scripts/build_pages.py` and run `python scripts/build_pages.py`.
 
 Keep the existing layout: a short description, a tier table if the badge has tiers, then `## GUI`, `## CLI`, and `## If it doesn't show up`. The site turns the GUI and CLI sections into tabs, so keep those headings exactly as they are.
 

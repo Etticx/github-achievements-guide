@@ -74,6 +74,8 @@ Se agradecen correcciones y traducciones. Consulta [CONTRIBUTING.md](../CONTRIBU
 
 Si esta guía te ayudó, una ⭐ ayuda a que otras personas la encuentren.
 
+*Guía no oficial. Sin relación con GitHub ni respaldada por GitHub.*
+
 ---
 
 Última revisión: noviembre de 2026. GitHub cambia los logros sin avisar. Si algo está mal, [abre un issue](../../../issues).

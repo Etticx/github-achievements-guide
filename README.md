@@ -74,6 +74,8 @@ Fixes and translations are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). The 
 
 If this helped you, a ⭐ helps others find it.
 
+*Unofficial guide. Not affiliated with or endorsed by GitHub.*
+
 ---
 
 Last checked: November 2026. GitHub changes achievements without announcing it. If something here is wrong, [open an issue](../../issues).
