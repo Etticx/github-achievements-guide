@@ -4,7 +4,7 @@
 
 [English](../README.md) · [Bahasa Melayu](malay.md) · [Bahasa Indonesia](indonesian.md) · **简体中文** · [Español](spanish.md)
 
-**完整教程网站：** https://YOUR-USERNAME.github.io/github-achievements-guide/
+**完整教程网站：** https://etticx.github.io/github-achievements-guide/
 
 > 最后核对：2026 年 11 月。GitHub 修改成就时不会公告。如果发现内容有误，请[提交 issue](../../../issues)。
 

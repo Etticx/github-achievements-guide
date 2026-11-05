@@ -4,7 +4,7 @@ Cómo conseguir cada logro de GitHub, paso a paso: una vez desde la web de githu
 
 [English](../README.md) · [Bahasa Melayu](malay.md) · [Bahasa Indonesia](indonesian.md) · [简体中文](chinese.md) · **Español**
 
-**Web con las guías completas:** https://YOUR-USERNAME.github.io/github-achievements-guide/
+**Web con las guías completas:** https://etticx.github.io/github-achievements-guide/
 
 > Última revisión: noviembre de 2026. GitHub cambia los logros sin avisar. Si algo está mal, [abre un issue](../../../issues).
 

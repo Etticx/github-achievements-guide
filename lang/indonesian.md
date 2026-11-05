@@ -4,7 +4,7 @@ Cara mendapatkan setiap achievement GitHub, langkah demi langkah: sekali lewat s
 
 [English](../README.md) · [Bahasa Melayu](malay.md) · **Bahasa Indonesia** · [简体中文](chinese.md) · [Español](spanish.md)
 
-**Situs dengan panduan lengkap:** https://YOUR-USERNAME.github.io/github-achievements-guide/
+**Situs dengan panduan lengkap:** https://etticx.github.io/github-achievements-guide/
 
 > Terakhir dicek: November 2026. GitHub mengubah achievement tanpa pengumuman. Kalau ada yang salah, [buka issue](../../../issues).
 

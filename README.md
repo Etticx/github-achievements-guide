@@ -4,7 +4,7 @@ How to earn each GitHub achievement, step by step: once through the github.com w
 
 **English** · [Bahasa Melayu](lang/malay.md) · [Bahasa Indonesia](lang/indonesian.md) · [简体中文](lang/chinese.md) · [Español](lang/spanish.md)
 
-**Website with full walkthroughs:** https://YOUR-USERNAME.github.io/github-achievements-guide/
+**Website with full walkthroughs:** https://etticx.github.io/github-achievements-guide/
 
 > Last checked: November 2026. GitHub changes achievements without announcing it. If something here is wrong, [open an issue](../../issues).
 
