@@ -6,8 +6,6 @@ Cara dapatkan setiap achievement GitHub, langkah demi langkah, melalui laman web
 
 [English](../README.md) · **Bahasa Melayu** · [Bahasa Indonesia](indonesian.md) · [简体中文](chinese.md) · [Español](spanish.md)
 
-> Kali terakhir disemak: November 2026. GitHub tukar achievement tanpa beritahu. Kalau ada yang salah, [buka issue](../../../issues).
-
 ## Semak achievement yang anda ada
 
 Pergi ke `https://github.com/<username-anda>?tab=achievements` dan letak tetikus atas lencana untuk tengok tahapnya. Lencana baru boleh ambil beberapa jam untuk muncul. Kalau tab itu kosong, hidupkan **Settings → Public profile → Show Achievements on my profile**.
@@ -27,6 +25,12 @@ Pergi ke `https://github.com/<username-anda>?tab=achievements` dan letak tetikus
 **Baru mula?** Empat yang pertama ambil masa lebih kurang 10 minit dalam satu repo latihan.
 
 **Tak boleh didapatkan sekarang:** Heart On Your Sleeve dan Open Sourcerer (sedang diuji oleh GitHub), serta Mars 2020 Contributor dan Arctic Code Vault Contributor (dah tamat).
+
+## Tutorial
+
+Panduan langkah demi langkah untuk setiap achievement, dengan arahan laman web dan terminal:
+
+**👉 https://etticx.github.io/github-achievements-guide/**
 
 ## Mula cepat (terminal)
 
@@ -69,3 +73,7 @@ Berlatih dalam repo sendiri, bukan dalam projek orang lain. Membeli atau bertuka
 Pembetulan dan terjemahan dialu-alukan. Baca [CONTRIBUTING.md](../CONTRIBUTING.md). Kandungan di bawah lesen [MIT](../LICENSE). Imej lencana adalah milik GitHub dan tak termasuk dalam lesen ini.
 
 Kalau panduan ini membantu, ⭐ akan membantu orang lain jumpa.
+
+---
+
+Kali terakhir disemak: November 2026. GitHub tukar achievement tanpa beritahu. Kalau ada yang salah, [buka issue](../../../issues).

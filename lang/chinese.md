@@ -6,8 +6,6 @@
 
 [English](../README.md) · [Bahasa Melayu](malay.md) · [Bahasa Indonesia](indonesian.md) · **简体中文** · [Español](spanish.md)
 
-> 最后核对：2026 年 11 月。GitHub 修改成就时不会公告。如果发现内容有误，请[提交 issue](../../../issues)。
-
 ## 查看你拥有的成就
 
 打开 `https://github.com/<你的用户名>?tab=achievements`，把鼠标移到徽章上可以看到等级。新徽章可能要过几个小时才会出现。如果页面是空的，请开启 **Settings → Public profile → Show Achievements on my profile**。
@@ -27,6 +25,12 @@
 **第一次做？** 前四个在一个练习仓库里大约 10 分钟就能完成。
 
 **目前无法获得：** Heart On Your Sleeve 和 Open Sourcerer（GitHub 正在测试），以及 Mars 2020 Contributor 和 Arctic Code Vault Contributor（已停止发放）。
+
+## 教程
+
+每个成就的完整分步教程，包含网页和终端两种操作方法：
+
+**👉 https://etticx.github.io/github-achievements-guide/**
 
 ## 快速开始（终端）
 
@@ -69,3 +73,7 @@ YOLO 和 Pair Extraordinaire 需要第二个人，具体做法见各自的教程
 欢迎修正和翻译，请看 [CONTRIBUTING.md](../CONTRIBUTING.md)。内容采用 [MIT](../LICENSE) 许可证。徽章图片归 GitHub 所有，不在本许可证范围内。
 
 如果这份指南对你有帮助，点个 ⭐ 能让更多人看到它。
+
+---
+
+最后核对：2026 年 11 月。GitHub 修改成就时不会公告。如果发现内容有误，请[提交 issue](../../../issues)。

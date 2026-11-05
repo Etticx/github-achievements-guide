@@ -6,8 +6,6 @@ Cómo conseguir cada logro de GitHub, paso a paso, desde la web de github.com o 
 
 [English](../README.md) · [Bahasa Melayu](malay.md) · [Bahasa Indonesia](indonesian.md) · [简体中文](chinese.md) · **Español**
 
-> Última revisión: noviembre de 2026. GitHub cambia los logros sin avisar. Si algo está mal, [abre un issue](../../../issues).
-
 ## Mira qué logros tienes
 
 Entra en `https://github.com/<tu-usuario>?tab=achievements` y pasa el cursor sobre una insignia para ver su nivel. Una insignia nueva puede tardar unas horas en aparecer. Si la pestaña está vacía, activa **Settings → Public profile → Show Achievements on my profile**.
@@ -27,6 +25,12 @@ Entra en `https://github.com/<tu-usuario>?tab=achievements` y pasa el cursor sob
 **¿Empiezas ahora?** Los cuatro primeros llevan unos 10 minutos en un repositorio de práctica.
 
 **No se pueden conseguir ahora:** Heart On Your Sleeve y Open Sourcerer (en pruebas por GitHub), y Mars 2020 Contributor y Arctic Code Vault Contributor (retirados).
+
+## Tutorial
+
+Guías paso a paso para cada logro, con instrucciones para la web y la terminal:
+
+**👉 https://etticx.github.io/github-achievements-guide/**
 
 ## Inicio rápido (terminal)
 
@@ -69,3 +73,7 @@ Practica en tu propio repositorio, no en proyectos ajenos. Comprar o intercambia
 Se agradecen correcciones y traducciones. Consulta [CONTRIBUTING.md](../CONTRIBUTING.md). El contenido usa la licencia [MIT](../LICENSE). Las imágenes de las insignias pertenecen a GitHub y no están cubiertas por ella.
 
 Si esta guía te ayudó, una ⭐ ayuda a que otras personas la encuentren.
+
+---
+
+Última revisión: noviembre de 2026. GitHub cambia los logros sin avisar. Si algo está mal, [abre un issue](../../../issues).

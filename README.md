@@ -6,8 +6,6 @@ How to earn each GitHub achievement, step by step, using either the github.com w
 
 **English** · [Bahasa Melayu](lang/malay.md) · [Bahasa Indonesia](lang/indonesian.md) · [简体中文](lang/chinese.md) · [Español](lang/spanish.md)
 
-> Last checked: November 2026. GitHub changes achievements without announcing it. If something here is wrong, [open an issue](../../issues).
-
 ## Check which ones you have
 
 Go to `https://github.com/<your-username>?tab=achievements` and hover over a badge to see its tier. A new badge can take a few hours to appear. If the tab is empty, turn on **Settings → Public profile → Show Achievements on my profile**.
@@ -27,6 +25,12 @@ Go to `https://github.com/<your-username>?tab=achievements` and hover over a bad
 **New to this?** The first four take about 10 minutes in one practice repository.
 
 **Can't be earned right now:** Heart On Your Sleeve and Open Sourcerer (being tested by GitHub), and Mars 2020 Contributor and Arctic Code Vault Contributor (retired).
+
+## Tutorial
+
+Full step-by-step guides for every achievement, with website and terminal instructions:
+
+**👉 https://etticx.github.io/github-achievements-guide/**
 
 ## Quick start (terminal)
 
@@ -69,3 +73,7 @@ Practise in your own repository, not on other people's projects. Buying or tradi
 Fixes and translations are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). The content is under the [MIT](LICENSE) license. Badge images belong to GitHub and are not covered by it.
 
 If this helped you, a ⭐ helps others find it.
+
+---
+
+Last checked: November 2026. GitHub changes achievements without announcing it. If something here is wrong, [open an issue](../../issues).
