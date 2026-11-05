@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GitHub Achievements Guide</title>
+<meta name="description" content="Step-by-step guides for every GitHub achievement, with website and command-line instructions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #F7F4EE;
+  --surface: #FFFDF9;
+  --text: #2A2826;
+  --muted: #6B655D;
+  --border: #E4DED3;
+  --accent: #B93C0B;
+  --accent-soft: #F6E3D8;
+  --code-bg: #2A2826;
+  --code-text: #F3EEE6;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1C1A18;
+    --surface: #24221F;
+    --text: #EDE8E0;
+    --muted: #A69F94;
+    --border: #3A3632;
+    --accent: #F28B50;
+    --accent-soft: #3A2A20;
+    --code-bg: #141210;
+    --code-text: #EDE8E0;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 17px/1.65 "IBM Plex Sans", system-ui, sans-serif;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.wrap { max-width: 980px; margin: 0 auto; padding: 0 20px; }
+.narrow { max-width: 720px; }
+
+header.site {
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+header.site .wrap {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; min-height: 60px;
+}
+.brand { font-weight: 700; color: var(--text); text-decoration: none; }
+.brand span { color: var(--accent); }
+.gh-link {
+  font-size: 15px; font-weight: 500; color: var(--text);
+  border: 1px solid var(--border); border-radius: 8px;
+  padding: 8px 14px; text-decoration: none; white-space: nowrap;
+}
+.gh-link:hover { border-color: var(--text); }
+
+.hero { padding: 56px 0 32px; }
+.hero h1 {
+  font-size: clamp(32px, 5vw, 46px); line-height: 1.15;
+  margin: 0 0 14px; letter-spacing: -0.02em;
+}
+.hero p { color: var(--muted); font-size: 19px; margin: 0; max-width: 620px; }
+
+.check {
+  margin: 28px 0 0; padding: 20px; background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  max-width: 620px;
+}
+.check label { display: block; font-weight: 600; margin-bottom: 8px; }
+.check .row { display: flex; gap: 8px; flex-wrap: wrap; }
+.check input {
+  flex: 1 1 200px; min-height: 44px; padding: 0 12px;
+  font: inherit; color: var(--text); background: var(--bg);
+  border: 1px solid var(--border); border-radius: 8px;
+}
+.check small { display: block; color: var(--muted); margin-top: 8px; font-size: 14px; }
+.btn {
+  min-height: 44px; padding: 0 18px; font: inherit; font-weight: 600;
+  color: #fff; background: var(--accent); border: 0; border-radius: 8px;
+  cursor: pointer;
+}
+@media (prefers-color-scheme: dark) { .btn { color: #1C1A18; } }
+.btn:hover { filter: brightness(1.08); }
+
+h2.section { font-size: 22px; margin: 48px 0 6px; }
+p.section-note { color: var(--muted); margin: 0 0 18px; }
+
+.grid {
+  display: grid; gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  list-style: none; padding: 0; margin: 0;
+}
+.card {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 18px; height: 100%;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); color: var(--text); text-decoration: none;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.card img { width: 64px; height: 64px; flex: none; }
+.card h3 { margin: 0 0 4px; font-size: 18px; }
+.card p { margin: 0 0 10px; font-size: 15px; color: var(--muted); line-height: 1.5; }
+.meta { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip {
+  font-size: 13px; font-weight: 500; padding: 2px 9px; border-radius: 99px;
+  background: var(--bg); border: 1px solid var(--border); color: var(--muted);
+}
+.chip.easy { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
+
+.gone { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--border); }
+.gone li {
+  display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+  padding: 12px 0; border-bottom: 1px solid var(--border);
+}
+.gone span { color: var(--muted); font-size: 15px; }
+
+/* Guide page */
+.back {
+  display: inline-block; margin: 28px 0 8px; font-weight: 500;
+  text-decoration: none;
+}
+.guide-head { display: flex; gap: 20px; align-items: center; margin: 8px 0 20px; }
+.guide-head img { width: 96px; height: 96px; }
+.guide-head h1 { margin: 0; font-size: clamp(30px, 5vw, 40px); letter-spacing: -0.02em; line-height: 1.15; }
+
+.prose h2 { font-size: 22px; margin: 36px 0 10px; }
+.prose p, .prose li { max-width: 68ch; }
+.prose li { margin: 6px 0; }
+.prose ol, .prose ul { padding-left: 24px; }
+.prose table { border-collapse: collapse; margin: 16px 0; min-width: 260px; }
+.prose th, .prose td { text-align: left; padding: 8px 18px 8px 0; border-bottom: 1px solid var(--border); }
+.prose th { font-size: 14px; color: var(--muted); font-weight: 600; }
+.prose blockquote {
+  margin: 18px 0; padding: 12px 16px; border-left: 3px solid var(--accent);
+  background: var(--surface); border-radius: 0 8px 8px 0;
+}
+.prose blockquote p { margin: 0; }
+.prose code {
+  font: 0.88em "JetBrains Mono", ui-monospace, monospace;
+  background: var(--surface); border: 1px solid var(--border);
+  padding: 1px 5px; border-radius: 5px;
+}
+.prose pre {
+  position: relative; margin: 14px 0; padding: 16px 18px;
+  background: var(--code-bg); color: var(--code-text);
+  border-radius: var(--radius); overflow-x: auto;
+  font-size: 14.5px; line-height: 1.6;
+}
+.prose pre code { background: none; border: 0; padding: 0; color: inherit; font-size: inherit; }
+.copy {
+  position: absolute; top: 8px; right: 8px; min-height: 32px; padding: 0 10px;
+  font: 500 13px "IBM Plex Sans", sans-serif; cursor: pointer;
+  color: var(--code-text); background: transparent;
+  border: 1px solid rgba(255,255,255,.25); border-radius: 6px;
+}
+.copy:hover { border-color: rgba(255,255,255,.6); }
+
+.tabs {
+  display: inline-flex; gap: 4px; padding: 4px; margin: 28px 0 0;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+}
+.tabs button {
+  min-height: 40px; padding: 0 18px; font: inherit; font-weight: 600; cursor: pointer;
+  color: var(--muted); background: transparent; border: 0; border-radius: 7px;
+}
+.tabs button[aria-selected="true"] { color: var(--text); background: var(--bg); box-shadow: inset 0 0 0 1px var(--border); }
+.tabpanel > h2:first-child { margin-top: 20px; }
+
+.pager {
+  display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  margin: 56px 0 0; padding-top: 20px; border-top: 1px solid var(--border);
+}
+.pager a { text-decoration: none; font-weight: 500; }
+
+footer { margin: 64px 0 0; padding: 24px 0 40px; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+
+@media (max-width: 560px) {
+  body { font-size: 16px; }
+  .wrap { padding: 0 16px; }
+  .hero { padding-top: 36px; }
+  .guide-head img { width: 72px; height: 72px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#">GitHub <span>Achievements</span> Guide</a>
+    <!-- Set this to your repository URL -->
+    <a class="gh-link" id="repo-link" href="https://github.com/YOUR-USERNAME/github-achievements-guide">Star on GitHub</a>
+  </div>
+</header>
+
+<main id="app" class="wrap"></main>
+
+<footer>
+  <div class="wrap">
+    Last checked November 2026. Badge images belong to GitHub. Content is MIT licensed.
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script>
+const IMG = id => `https://github.githubassets.com/images/modules/profile/achievements/${id}-default.png`;
+
+const BADGES = [
+  { id: "quickdraw", name: "Quickdraw", rule: "Close an issue or PR within 5 minutes of opening it.", tiers: "One tier", time: "1 min", easy: true },
+  { id: "yolo", name: "YOLO", rule: "Merge a pull request without a code review.", tiers: "One tier", time: "5 min", easy: true },
+  { id: "pull-shark", name: "Pull Shark", rule: "Get pull requests you opened merged.", tiers: "2 · 16 · 128 · 1024", time: "5 min", easy: true },
+  { id: "pair-extraordinaire", name: "Pair Extraordinaire", rule: "Be a co-author on a commit in a merged PR.", tiers: "1 · 10 · 24 · 48", time: "5 min", easy: true },
+  { id: "galaxy-brain", name: "Galaxy Brain", rule: "Get answers accepted in GitHub Discussions.", tiers: "2 · 8 · 16 · 32", time: "Varies" },
+  { id: "starstruck", name: "Starstruck", rule: "Own a repository that gets enough stars.", tiers: "16 · 128 · 512 · 4096", time: "Varies" },
+  { id: "public-sponsor", name: "Public Sponsor", rule: "Sponsor someone through GitHub Sponsors.", tiers: "One tier", time: "3 min · costs money" },
+];
+
+const GONE = [
+  ["Heart On Your Sleeve", "Being tested by GitHub"],
+  ["Open Sourcerer", "Being tested by GitHub"],
+  ["Mars 2020 Contributor", "Retired"],
+  ["Arctic Code Vault Contributor", "Retired"],
+];
+
+const app = document.getElementById("app");
+const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function renderHome() {
+  document.title = "GitHub Achievements Guide";
+  app.innerHTML = `
+    <section class="hero narrow">
+      <h1>How to earn every GitHub achievement</h1>
+      <p>Each guide shows two ways to do it: clicking through github.com, or running a few commands with <code>git</code> and <code>gh</code>.</p>
+      <form class="check" id="check">
+        <label for="user">See which badges you already have</label>
+        <div class="row">
+          <input id="user" name="user" autocomplete="off" spellcheck="false" placeholder="Your GitHub username" required>
+          <button class="btn" type="submit">Open my achievements</button>
+        </div>
+        <small>Opens your profile's Achievements tab on github.com. Hover a badge there to see its tier.</small>
+      </form>
+    </section>
+
+    <h2 class="section">Achievements you can earn</h2>
+    <p class="section-note">New to this? Start with the first four. You can do them alone in one practice repository.</p>
+    <ul class="grid">
+      ${BADGES.map(b => `
+        <li><a class="card" href="#${b.id}">
+          <img src="${IMG(b.id)}" alt="" width="64" height="64" loading="lazy">
+          <div>
+            <h3>${b.name}</h3>
+            <p>${b.rule}</p>
+            <div class="meta">
+              <span class="chip ${b.easy ? "easy" : ""}">${b.time}</span>
+              <span class="chip">${b.tiers}</span>
+            </div>
+          </div>
+        </a></li>`).join("")}
+    </ul>
+
+    <h2 class="section">Can't be earned right now</h2>
+    <ul class="gone">
+      ${GONE.map(([n, s]) => `<li><strong>${n}</strong><span>${s}</span></li>`).join("")}
+    </ul>`;
+
+  document.getElementById("check").addEventListener("submit", e => {
+    e.preventDefault();
+    const u = document.getElementById("user").value.trim().replace(/^@/, "");
+    // GitHub usernames: letters, digits, single hyphens, max 39 chars
+    if (!/^[a-z\d](?:[a-z\d-]{0,38})$/i.test(u)) return alert("That doesn't look like a GitHub username.");
+    window.open(`https://github.com/${encodeURIComponent(u)}?tab=achievements`, "_blank", "noopener");
+  });
+}
+
+function storedTab() { try { return localStorage.getItem("tab") || "GUI"; } catch { return "GUI"; } }
+function saveTab(t) { try { localStorage.setItem("tab", t); } catch {} }
+
+async function renderGuide(id) {
+  const i = BADGES.findIndex(b => b.id === id);
+  if (i < 0) return renderHome();
+  const b = BADGES[i];
+  document.title = `${b.name} · GitHub Achievements Guide`;
+  app.innerHTML = `<div class="narrow"><a class="back" href="#">← All achievements</a><p>Loading…</p></div>`;
+
+  let md;
+  try {
+    const res = await fetch(`achievements/${id}.md`);
+    if (!res.ok) throw new Error(res.status);
+    md = await res.text();
+  } catch {
+    app.innerHTML = `<div class="narrow"><a class="back" href="#">← All achievements</a><p>Couldn't load this guide. <a href="achievements/${id}.md">Open the Markdown file</a> instead.</p></div>`;
+    return;
+  }
+
+  const prose = document.createElement("div");
+  prose.className = "prose";
+  prose.innerHTML = marked.parse(md.replace(/^# .*\n/, ""));
+
+  // Links between guides: "yolo.md" -> "#yolo"
+  prose.querySelectorAll("a[href$='.md']").forEach(a => {
+    const m = a.getAttribute("href").match(/^([\w-]+)\.md$/);
+    if (m) a.href = "#" + m[1];
+  });
+  prose.querySelectorAll("a[href^='http']").forEach(a => { a.target = "_blank"; a.rel = "noopener"; });
+
+  // Group content under each h2 so GUI / CLI can become tabs
+  const sections = {};
+  let current = null;
+  [...prose.children].forEach(el => {
+    if (el.tagName === "H2") {
+      current = document.createElement("section");
+      current.dataset.title = el.textContent.trim();
+      el.before(current);
+      sections[current.dataset.title] = current;
+    }
+    if (current) current.appendChild(el);
+  });
+
+  if (sections.GUI && sections.CLI) {
+    const tabs = document.createElement("div");
+    tabs.className = "tabs";
+    tabs.setAttribute("role", "tablist");
+    tabs.setAttribute("aria-label", "Choose a method");
+    const panels = [sections.GUI, sections.CLI];
+    const labels = { GUI: "On the website", CLI: "In the terminal" };
+    panels.forEach((p, n) => {
+      const key = p.dataset.title;
+      p.id = `panel-${key}`;
+      p.className = "tabpanel";
+      p.setAttribute("role", "tabpanel");
+      p.querySelector("h2").remove();
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.id = `tab-${key}`;
+      btn.textContent = labels[key];
+      btn.setAttribute("role", "tab");
+      btn.setAttribute("aria-controls", p.id);
+      p.setAttribute("aria-labelledby", btn.id);
+      btn.addEventListener("click", () => select(key));
+      btn.addEventListener("keydown", e => {
+        if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+          const other = key === "GUI" ? "CLI" : "GUI";
+          select(other);
+          document.getElementById(`tab-${other}`).focus();
+        }
+      });
+      tabs.appendChild(btn);
+    });
+    sections.GUI.before(tabs);
+
+    function select(key) {
+      panels.forEach(p => {
+        const on = p.dataset.title === key;
+        p.hidden = !on;
+        const btn = document.getElementById(`tab-${p.dataset.title}`);
+        btn.setAttribute("aria-selected", on);
+        btn.tabIndex = on ? 0 : -1;
+      });
+      saveTab(key);
+    }
+    // select() needs the tabs in the DOM; called after mount below
+    prose._select = () => select(storedTab() === "CLI" ? "CLI" : "GUI");
+  }
+
+  // Copy buttons on code blocks
+  prose.querySelectorAll("pre").forEach(pre => {
+    const btn = document.createElement("button");
+    btn.className = "copy";
+    btn.type = "button";
+    btn.textContent = "Copy";
+    btn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(pre.querySelector("code").innerText);
+        btn.textContent = "Copied";
+      } catch { btn.textContent = "Select and copy"; }
+      setTimeout(() => (btn.textContent = "Copy"), 1600);
+    });
+    pre.appendChild(btn);
+  });
+
+  const prev = BADGES[i - 1], next = BADGES[i + 1];
+  app.innerHTML = `
+    <div class="narrow">
+      <a class="back" href="#">← All achievements</a>
+      <div class="guide-head">
+        <img src="${IMG(b.id)}" alt="" width="96" height="96">
+        <h1>${esc(b.name)}</h1>
+      </div>
+    </div>`;
+  const wrap = app.firstElementChild;
+  wrap.appendChild(prose);
+  prose._select && prose._select();
+  wrap.insertAdjacentHTML("beforeend", `
+    <nav class="pager" aria-label="More guides">
+      ${prev ? `<a href="#${prev.id}">← ${prev.name}</a>` : "<span></span>"}
+      ${next ? `<a href="#${next.id}">${next.name} →</a>` : ""}
+    </nav>`);
+  window.scrollTo(0, 0);
+  wrap.querySelector("h1").setAttribute("tabindex", "-1");
+  wrap.querySelector("h1").focus({ preventScroll: true });
+}
+
+function route() {
+  const id = location.hash.slice(1);
+  id ? renderGuide(id) : renderHome();
+}
+window.addEventListener("hashchange", route);
+route();
+</script>
+</body>
+</html>
