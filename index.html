@@ -299,11 +299,11 @@ async function renderGuide(id) {
 
   let md;
   try {
-    const res = await fetch(`achievements/${id}.md`);
+    const res = await fetch(`docs/achievements/${id}.md`);
     if (!res.ok) throw new Error(res.status);
     md = await res.text();
   } catch {
-    app.innerHTML = `<div class="narrow"><a class="back" href="#">← All achievements</a><p>Couldn't load this guide. <a href="achievements/${id}.md">Open the Markdown file</a> instead.</p></div>`;
+    app.innerHTML = `<div class="narrow"><a class="back" href="#">← All achievements</a><p>Couldn't load this guide. <a href="docs/achievements/${id}.md">Open the Markdown file</a> instead.</p></div>`;
     return;
   }
 
