@@ -40,6 +40,7 @@ TEMPLATE = """<!doctype html>
 <title>{title}</title>
 <meta name="description" content="{description}">
 <link rel="canonical" href="{url}">
+<meta name="google-site-verification" content="-RqExHvDMYd0tGsSyvU5ADpDxqTPw8vKmkf6-Jf6XxA">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="GitHub Achievements Guide">
 <meta property="og:title" content="{title}">
